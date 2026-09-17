@@ -1,0 +1,79 @@
+#include<stdio.h>
+
+
+int addition(int c,int d);
+int subtraction(int e,int f);
+int multiplication(int a,int b);
+int division(int g,int h);
+int remainder(int i, int j);
+
+int main()
+{
+	int a,b;
+	
+	printf("Enter The First Number:");
+	scanf("%d",&a);
+	printf("Enter The Second Number:");
+	scanf("%d",&b);
+	
+	
+	printf("%d\n",addition(a,b));
+	
+	printf("%d\n",subtraction(a,b));
+	
+	printf("%d\n",multiplication(a,b));
+	
+	printf("%d\n",division(a,b));
+	
+	printf("%d\n",remainder(a,b));
+	
+	return 0;
+}
+
+	int addition(int c, int d)
+{
+	int value;
+	
+	value=c+d;
+	
+	return value;
+}
+
+int subtraction(int e,int f)
+
+{
+	int value;
+	
+	value=e-f;
+
+	return value;
+}
+int multiplication(int a,int b)
+
+{
+	int value;
+	
+	value=a*b;
+	
+	return value;
+}
+
+int division(int g,int h)
+
+{
+	int value;
+	
+	value=g/h;
+	
+	return value;
+}
+
+int remainder(int i,int j)
+
+{
+	int value;
+	
+	value=i%j;
+	
+	return value;
+}

@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+    char filename[]="write.txt";
+    FILE *fp=fopen(filename,"r");
+    if(fp==NULL)
+    {
+        printf("NOT EXIST\n"); 
+        return 1;
+    }
+    char num;
+    int count=0;
+    int countq=0;
+    printf("the file exist\n");
+    for(int i=0;fscanf(fp,"%c",&num)!=EOF; i++)
+   { if(num==' ')
+    {
+        countq++;
+    }
+    else
+    {
+        count++;
+    }
+    }
+    printf("number of characters without spaces %d",count);
+
+}

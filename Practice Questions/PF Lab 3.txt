@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+    int Number;
+    printf("Enter Any Number");
+    scanf("%d",&Number);
+
+    int check_Odd=(Number%2==0 || Number%2==0);
+    printf(" Check odd:%d",check_Odd);
+    return 0;
+
+}
